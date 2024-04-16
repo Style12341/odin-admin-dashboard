@@ -157,13 +157,13 @@ ul li img{
 }
 .logger-container{
   display:grid;
-  grid-template-columns:  repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: repeat(auto-fit,minmax(150px, 1fr));
-  gap:10px;
+  gap:15px;
 }
 .logger{
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: white;
   display:grid;
   grid-template-columns: 1fr;
@@ -176,6 +176,30 @@ ul li img{
 .logger-buttons{
   align-self: end;
   justify-self: end;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:15px;
+  place-items: center;
+}
+.logger-btn{
+  background-color: inherit;
+  border: 0px;
+}
+.fav-btn{
+  height:1rem;
+  width:1rem;
+  background-image: url(/images/favorite.svg);
+}
+.view-btn{
+  height:1rem;
+  width:1rem;
+  background-image: url(/images/watch.svg);
+}
+.share-btn{
+  height:1rem;
+  width:1rem;
+  background-image: url(/images/share.svg);
+
 }
 .announcements{
   display:grid;
@@ -197,6 +221,10 @@ ul li img{
 .announcement-container .announcement:not(:last-child){
   border-bottom: 1px dotted black;
 }
+.announcement-container .announcement:not(:first-child){
+  padding-top: 15px;
+
+}
 .trendings{
   display:grid;
   grid-template-rows: auto 1fr;
@@ -210,12 +238,12 @@ ul li img{
   padding:20px;
   display:grid;
   grid-template-rows: repeat(4, 1fr);
-  
+  gap:5px;
 
 }
 .trending{
   display:grid;
   grid-template-columns: auto 1fr;
-  gap:10px;
+  gap:0px;
   align-items: center;
 }
