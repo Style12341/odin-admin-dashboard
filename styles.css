@@ -43,31 +43,48 @@ ul{
 }
 .sidebar{
   grid-area: 1 / 1 /-1/ 1;
-  background-color: #71ba57;
+  background-color: #65a30d;
   padding: 10px;
+  padding-left:25px;
   display:grid;
   grid-template-rows: 30px min-content 50px;
-  gap:30px;
+  gap:50px;
+  color:#f7fee7;
+  font-weight: bold;
   
 }
 .top-sidebar{
   display:grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 40px 1fr;
+  position: relative;
+  left:-10px;
+  gap:10px;
   align-items: center;
+  font-size: 1.3rem;
 }
 .mid-sidebar ul {
   display:grid;
   grid-template-rows: repeat(6, 1fr);
-  gap:10px;
+  gap:15px;
 }
-.lower-sidebar ul {
+.bot-sidebar ul {
   display:grid;
   grid-template-rows: repeat(3, 1fr);
+  gap:15px;
 } 
 ul li {
   display:grid;
-  grid-template-columns: auto 1fr;
-  gap:10px;
+  grid-template-columns: 1.2rem 1fr;
+  gap:20px;
+  align-items: center;
+}
+ul li img{
+  background-repeat: no-repeat;
+    filter: invert(1);
+}
+.dashboard-logo{
+  background-repeat: no-repeat;
+    filter: invert(1);
 }
 .content{
   grid-area: 2 / 2 / -1 / -1;
