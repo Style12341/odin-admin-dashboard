@@ -141,6 +141,7 @@ ul li img{
   grid-area: 2 / 2 / -1 / -1;
   background-color: #E2E8F0;
   padding: 10px;
+  padding-right:40px;
   display: grid;
   grid-template-areas: 
   "main-content announcements"
